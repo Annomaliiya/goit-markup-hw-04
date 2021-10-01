@@ -34,10 +34,20 @@
         </nav>
         <ul class="contacts list">
           <li class="site-nav-items">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <div class="email">
+              <svg class="email-icon">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </div>
           </li>
           <li class="site-nav-items">
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <div class="phone">
+              <svg class="phone-icon">
+                <use href="./images/icons.svg#icon-telephone"></use>
+              </svg>
+              <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </div>
           </li>
         </ul>
       </div>
@@ -211,17 +221,56 @@
         </div>
       </section>
     </main>
+    <
     <footer class="page-footer">
-      <div class="container">
-        <a class="logo" href="./index.html"
-          ><span class="blue">Web</span>Studio</a
-        >
-        <address class="address">
-          <p class="address-name">г. Киев, пр-т Леси Украинки, 26</p>
-          <a class="contacts" href="mailto:info@example.com">info@example.com</a
-          ><br />
-          <a class="contacts tel" href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
+      <div class="container-footer container">
+        <div>
+          <a class="logo" href="./index.html"
+            ><span class="blue">Web</span>Studio</a
+          >
+          <address class="address">
+            <p class="address-name">г. Киев, пр-т Леси Украинки, 26</p>
+            <a class="contacts" href="mailto:info@example.com"
+              >info@example.com</a
+            ><br />
+            <a class="contacts tel" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </address>
+        </div>
+        <div class="subscription-links">
+          <p class="subscription-text">ПРИСОЕДИНЯЙТЕСЬ</p>
+          <ul class="social-network-list list">
+            <li class="social-network-item footer">
+              <a href="" class="social-network-link">
+                <svg class="social-network-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-network-item footer">
+              <a href="" class="social-network-link">
+                <svg class="social-network-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-network-item footer">
+              <a href="" class="social-network-link">
+                <svg class="social-network-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-network-item footer">
+              <a href="" class="social-network-link">
+                <svg class="social-network-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
