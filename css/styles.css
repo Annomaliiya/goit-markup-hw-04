@@ -169,7 +169,7 @@ a:focus {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/hero-background.jpg);
+    url(../images/hero-background.jpg);
   text-align: center;
   color: var(--white-color);
 }
@@ -220,11 +220,12 @@ a:focus {
   margin-left: -30px;
   margin-top: -30px;
 }
-.feature-icon {
+.feature-item-icon {
+  display: flex;
+  justify-content: center;
   background-color: var(--secondary-backround-color);
   width: 100%;
   height: 120px;
-  padding: 25px 70px 25px 70px;
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -232,6 +233,9 @@ a:focus {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 120px) / 4);
+}
+.feature-icon {
+  align-self: center;
 }
 .feature-title {
   font-size: 14px;
@@ -309,16 +313,30 @@ a:focus {
 .social-network-item:not(:last-child) {
   margin-right: 10px;
 }
+.social-network-link {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  fill: var(--white-color);
+  border-radius: 100%;
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+}
+.social-network-link:hover,
+.social-network-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
+  border-radius: 100%;
+}
 .social-network-item {
-  padding: 12px;
   fill: #afb1b8;
 }
 .social-network-icon {
-  width: 20px;
-  height: 20px;
-  fill: inherit;
   display: block;
+  align-self: center;
 }
+/*
 .social-network-item.footer:hover,
 .social-network-item.footer:focus,
 .social-network-item:hover,
@@ -327,7 +345,7 @@ a:focus {
   fill: var(--white-color);
   border-radius: 100%;
   cursor: pointer;
-}
+}*/
 .name {
   font-size: 16px;
   font-weight: 500;
@@ -340,24 +358,31 @@ a:focus {
 /* оформление секции постоянные клиенты*/
 .clients-list {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
 .clients-item {
-  width: 170px;
-  height: 92px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc((100% - 180px) / 6);
+}
+.clients-item-link {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  padding: 16px 32px;
   fill: #afb1b8;
 }
 .clients-icon {
-  width: 106px;
-  height: 60px;
   display: block;
   color: inherit;
 }
-.clients-item:hover,
-.clients-item:focus {
+.clients-item-link:hover,
+.clients-item-link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
